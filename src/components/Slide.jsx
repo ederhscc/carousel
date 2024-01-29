@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const Slide = () => {
+const Slide = ({ url, isActive }) => {
   return (
-    <div>Slide</div>
-  )
-}
+    <div className={isActive ? "slide active" : "slide"}>
+      <img src={url} />
+    </div>
+  );
+};
 
-export default Slide
+export default Slide;
